@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msplotly"
+version = "0.0.1"
+authors = [
+    {name = "Ivan Munoz-Gutierrez", email = "ivan.munoz.gutierrez@gmail.com"},
+]
+description = "Make graphical representations of BLASTn alignments"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "DNA alignments", "BLASTn", "Graphical BLASTn alignments"
+]
+dependencies = [
+    "bezier",
+    "biopython",
+    "dash",
+    "dash_ag_grid",
+    "dash-bootstrap-components",
+    "dash-iconify",
+    "dash-mantine_components",
+    "kaleido",
+    "matplotlib",
+    "plotly",
+    "pandas",
+]
+
+[project.scripts]
+find_resistances = "mspplotly.layout:msplotly"
