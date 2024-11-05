@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "msplotly"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
     {name = "Ivan Munoz-Gutierrez", email = "ivan.munoz.gutierrez@gmail.com"},
 ]
@@ -29,4 +29,4 @@ dependencies = [
 ]
 
 [project.scripts]
-find_resistances = "mspplotly.layout:msplotly"
+msplotly = "msplotly.app:main"
