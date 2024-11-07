@@ -23,11 +23,11 @@ import plotly.colors as colors
 import numpy as np
 import matplotlib.colors as mcolors
 
-from arrow import Arrow
-from rectangle_bezier import RectangleCurveHeight
-from user_input import UserInput
-import msplotter as msp
-from msplotter import GenBankRecord, BlastnAlignment
+from msplotly.arrow import Arrow
+from msplotly.rectangle_bezier import RectangleCurveHeight
+from msplotly.user_input import UserInput
+from msplotly import msplotter as msp
+from msplotly.msplotter import GenBankRecord, BlastnAlignment
 
 
 # = FUNCTIONS FOR ALIGNMENTS ============================================================

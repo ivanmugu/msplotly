@@ -12,6 +12,7 @@ import tempfile
 import atexit
 from pathlib import Path
 from io import BytesIO
+import webbrowser
 
 import dash
 import dash_ag_grid as dag
@@ -22,8 +23,8 @@ from dash_iconify import DashIconify
 from plotly.graph_objects import Figure
 import plotly.express as px
 
-import plotter as plt
-from user_input import UserInput
+from msplotly import plotter as plt
+from msplotly.user_input import UserInput
 
 
 # TODO: avoid using biopython for blasting.
@@ -1239,7 +1240,13 @@ def create_dash_app() -> dash.Dash:
 
 def main() -> None:
     app = create_dash_app()
-    app.run_server(debug=True)
+    # Open the app in the default web browser
+    webbrowser.open("http://127.0.0.1:8050")
+    # Run the app
+    app.run(
+        debug=True,
+        use_reloader=False,
+    )
 
 
 if __name__ == "__main__":

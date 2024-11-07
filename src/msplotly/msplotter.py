@@ -37,7 +37,7 @@ from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbiblastnCommandline
 from Bio.SeqRecord import SeqRecord
 
-from arrow import Arrow
+from msplotly.arrow import Arrow
 
 
 class GenBankRecord:

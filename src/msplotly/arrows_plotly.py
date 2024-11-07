@@ -5,7 +5,7 @@ from plotly.graph_objects import Figure
 import dash
 from dash import html, dcc, Input, Output, callback
 
-from arrow import Arrow
+from msplotly.arrow import Arrow
 
 
 def plot_polygon(
